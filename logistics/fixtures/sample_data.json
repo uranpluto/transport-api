@@ -1,0 +1,166 @@
+[
+    {
+      "model": "logistics.driver",
+      "pk": 1,
+      "fields": {
+        "name": "Peter Pan",
+        "phone": "0902123456",
+        "license_number": "VP789",
+        "is_available": true
+      }
+    },
+    {
+      "model": "logistics.driver",
+      "pk": 2,
+      "fields": {
+        "name": "Jozko Mrkvicka",
+        "phone": "0948571364",
+        "license_number": "VP456",
+        "is_available": true
+      }
+    },
+    {
+        "model": "logistics.driver",
+        "pk": 3,
+        "fields": {
+          "name": "Janko Hrasko",
+          "phone": "0905951236",
+          "license_number": "VP741",
+          "is_available": true
+        }
+      },
+    {
+      "model": "logistics.driver",
+      "pk": 4,
+      "fields": {
+        "name": "Margita Figuli",
+        "phone": "056789455",
+        "license_number": "VP123",
+        "is_available": false
+      }
+    },
+  
+    {
+      "model": "logistics.vehicle",
+      "pk": 1,
+      "fields": {
+        "license_plate": "KE123AA",
+        "vehicle_type": "van",
+        "max_capacity_kg": "1200.00",
+        "cost_per_km": "5.50",
+        "current_x": "10.7",
+        "current_y": "10.5",
+        "is_available": true,
+        "driver": 1
+      }
+    },
+    {
+      "model": "logistics.vehicle",
+      "pk": 2,
+      "fields": {
+        "license_plate": "PP564AA",
+        "vehicle_type": "truck",
+        "max_capacity_kg": "5000.00",
+        "cost_per_km": "8.75",
+        "current_x": "110.5",
+        "current_y": "20.2",
+        "is_available": true,
+        "driver": 2
+      }
+    },
+    {
+      "model": "logistics.vehicle",
+      "pk": 3,
+      "fields": {
+        "license_plate": "ZA789FC",
+        "vehicle_type": "van",
+        "max_capacity_kg": "900.00",
+        "cost_per_km": "4.25",
+        "current_x": "210",
+        "current_y": "30",
+        "is_available": false,
+        "driver": 3
+      }
+    },
+    {
+      "model": "logistics.vehicle",
+      "pk": 4,
+      "fields": {
+        "license_plate": "LE145DD",
+        "vehicle_type": "truck",
+        "max_capacity_kg": "7500.00",
+        "cost_per_km": "9.50",
+        "current_x": "350.0",
+        "current_y": "40.0",
+        "is_available": true,
+        "driver": 4
+      }
+    },
+    {
+      "model": "logistics.vehicle",
+      "pk": 5,
+      "fields": {
+        "license_plate": "BA954AK",
+        "vehicle_type": "van",
+        "max_capacity_kg": "1500.00",
+        "cost_per_km": "6.00",
+        "current_x": "500.5",
+        "current_y": "50.3",
+        "is_available": true,
+        "driver": null
+      }
+    },
+  
+    {
+        "model": "logistics.order",
+        "pk": 1,
+        "fields": {
+        "order_number": "ORD-001",
+        "customer_name": "Jano",
+        "pickup_x": 0.7,
+        "pickup_y": 10.3,
+        "delivery_x": 75.2,
+        "delivery_y": 199.8,
+        "total_weight_kg": "100.50",
+        "creation_date": "2025-11-04T09:00:00Z",
+        "status": "pending",
+        "assigned_vehicle": 1
+        }
+    },
+    {
+        "model": "logistics.order",
+        "pk": 2,
+        "fields": {
+        "order_number": "ORD-002",
+        "customer_name": "Fero",
+        "pickup_x": 120.4,
+        "pickup_y": 20.9,
+        "delivery_x": 292.5,
+        "delivery_y": 44.1,
+        "total_weight_kg": "100.00",
+        "creation_date": "2025-11-04T10:00:00Z",
+        "status": "pending",
+        "assigned_vehicle": 2
+        }
+    },
+    {
+        "model": "logistics.order",
+        "pk": 3,
+        "fields": {
+        "order_number": "ORD-003",
+        "customer_name": "Peter",
+        "pickup_x": 300.6,
+        "pickup_y": 30.9,
+        "delivery_x": 87.4,
+        "delivery_y": 271.2,
+        "total_weight_kg": "100.00",
+        "creation_date": "2025-11-04T11:00:00Z",
+        "status": "pending",
+        "assigned_vehicle": 3
+        }
+    }
+      
+
+    
+  ]
+  
